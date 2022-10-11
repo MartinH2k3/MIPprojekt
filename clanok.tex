@@ -9,13 +9,14 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{graphicx}
 
 \usepackage{cite}
 %\usepackage{times}
-
+\graphicspath{ {./images/} }
 \pagestyle{headings}
 
-\title{Mnam\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Vplyv počítačov na šach\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
 
 \author{Meno Priezvisko\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
@@ -23,7 +24,7 @@
 	{\small \texttt{...@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 30. September 2022} % upravte
 
 
 
@@ -49,12 +50,11 @@ Záverečné poznámky prináša časť~\ref{zaver}.
 
 
 \section{Nejaká časť} \label{nejaka}
-
+\includegraphics{diagram.pdf}
 Z obr.~\ref{f:rozhod} je všetko jasné. 
 
 \begin{figure*}[tbh]
 \centering
-%\includegraphics[scale=1.0]{diagram.pdf}
 Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
 \caption{Rozhodujúci argument.}
 \label{f:rozhod}
@@ -63,6 +63,7 @@ Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný pláva
 
 
 \section{Iná časť} \label{ina}
+
 
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
 
